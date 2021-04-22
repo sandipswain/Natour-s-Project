@@ -1,0 +1,63 @@
+.btn{
+
+&:link,
+&:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    /* Inline-block treats element as text so defining so can align it in center in its parent class */
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+&:hover {
+    transform: translateY(-.3rem);
+    /* X-axis Y-axis  blur*/
+    box-shadow: 0 .1rem .2rem rgba($color-black, .2);
+}
+
+&:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+}
+
+&--white {
+    background-color:$color-white;
+    color:$color-grey-dark;
+
+    &::after {
+    background-color: $color-white;
+}
+}
+
+&::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+
+
+&:hover::after {
+    /* Scale increases the size of the element */
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+&--animated {
+    animation: moveInbottom 1s ease-out .45s;
+    /* Before the animation starts the styles will be applied */
+    animation-fill-mode: backwards;
+}
+
+}
