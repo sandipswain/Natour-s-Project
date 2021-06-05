@@ -17,7 +17,9 @@
 <body>
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">MENU</label>
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
@@ -131,7 +133,7 @@
         </section>
 
         <!-- Tours Section -->
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -166,7 +168,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now!</a>
+                                <a href="#popup" class="btn btn--white">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +201,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$497</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now!</a>
+                                <a href="#popup" class="btn btn--white">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -232,7 +234,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$897</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now!</a>
+                                <a href="#popup" class="btn btn--white">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -366,6 +368,32 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start Booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &dash; Please read these terms before
+                    booking.</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam repellendus doloremque rem
+                    error fuga enim eos vitae neque ullam nemo dolorum non quaerat vel consequatur omnis, maxime
+                    adipisci, eligendi ipsa! Ipsam minima quibusdam quisquam, itaque excepturi explicabo accusantium
+                    officiis ipsa esse rem, unde inventore mollitia eius ex non deleniti voluptas culpa molestiae eaque!
+                    Quas, et dolorum accusantium vitae fugiat alias aspernatur fugit est eveniet iure inventore natus
+                    asperiores, quam eaque repudiandae animi odio. Sunt odio quis fugit, impedit unde nisi? Voluptatum
+                    ea officia obcaecati explicabo. Earum impedit ipsum delectus quibusdam ducimus optio, minus nobis.
+                    Fugiat fuga officiis repellat necessitatibus. Doloremque.
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
 
     <!-- <section class="grid-test">
         <div class="row">
